@@ -3,3 +3,11 @@ class main{
 
     }
 }
+
+class Food{
+ public String name;
+    
+    Food(String n){
+        name = n;   
+    }
+}
