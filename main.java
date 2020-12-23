@@ -1,28 +1,33 @@
-class main{
-    public static void main(String[] args) {
+public class main {
+    public static void main(String[] args)  {
+        Human daniil = new Human("beans","daniil");
+        Food beans = new Food("beans");
+        Food meat = new Food("meat");
 
+        daniil.eat(meat);
+        daniil.eat(beans);
     }
 }
 
 class Food{
- public String name;
-    
+ public  String name;
+
     Food(String n){
-        name = n;   
+        name = n;
     }
 }
 
 class Human{
 
-    public String dontLikeFood;
-    public String name;
+    public  String dontLikeFood;
+    public  String name;
 
     Human (String f, String n){
-        dontLikeFood = food;
+        dontLikeFood = f;
         name = n;
     }
 
-    public static void eat(Food food){
+    public void eat(Food food){
         if(food.name == dontLikeFood){
             System.out.println(name + "doesnt like" + food.name);
         }
