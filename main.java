@@ -11,3 +11,21 @@ class Food{
         name = n;   
     }
 }
+
+class Human{
+
+    public String dontLikeFood;
+    public String name;
+
+    Human (String f, String n){
+        dontLikeFood = food;
+        name = n;
+    }
+
+    public static void eat(Food food){
+        if(food.name == dontLikeFood){
+            System.out.println(name + "doesnt like" + food.name);
+        }
+          else  System.out.println(name + "like eat" + food.name);
+    }
+}
